@@ -5,13 +5,13 @@ spring:
 ---
 server:
   port: 8201
-#spring的配置
+#spring
 spring:
   profiles: dev
   application:
-    name: springcloud-provider-dept #三个服务名字一致！
+    name: springcloud-provider-dept 
     
-#Eureka的配置，服务注册到哪里
+#Eureka
 eureka:
   client:
     service-url:
@@ -20,13 +20,13 @@ eureka:
 ---
 server:
   port: 8202
-#spring的配置
+#spring
 spring:
   profiles: test
   application:
-    name: springcloud-provider-dept #三个服务名字一致！
+    name: springcloud-provider-dept 
 
-#Eureka的配置，服务注册到哪里
+#Eureka
 eureka:
   client:
     service-url:
