@@ -7,18 +7,18 @@ spring:
 server:
   port: 8001
 
-#mybatis配置
+#mybatis
 mybatis:
   type-aliases-package: com.zc.springcloud.pojo
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
 
 
-#spring的配置
+#spring
 spring:
   profiles: dev
   application:
-    name: springcloud-config-dept #三个服务名字一致！
+    name: springcloud-config-dept 
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
@@ -26,15 +26,15 @@ spring:
     username: root
     password: root3306
 
-#Eureka的配置，服务注册到哪里
+#Eureka
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    instance-id: springcloud-provider-dept8001  #修改eureka上的默认描述信息
+    instance-id: springcloud-provider-dept8001 
 
-#info配置
+#info
 info:
   app.name: zhaocan-springcloud
   company.name: zhaocan233.top
@@ -44,18 +44,18 @@ info:
 server:
   port: 8001
 
-#mybatis配置
+#mybatis
 mybatis:
   type-aliases-package: com.zc.springcloud.pojo
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
 
 
-#spring的配置
+#spring
 spring:
   profiles: test
   application:
-    name: springcloud-config-dept #三个服务名字一致！
+    name: springcloud-config-dept
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
@@ -63,15 +63,15 @@ spring:
     username: root
     password: root3306
 
-#Eureka的配置，服务注册到哪里
+#Eureka
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    instance-id: springcloud-provider-dept8001  #修改eureka上的默认描述信息
+    instance-id: springcloud-provider-dept8001 
 
-#info配置
+#info
 info:
   app.name: zhaocan-springcloud
   company.name: zhaocan233.top
